@@ -1,0 +1,3 @@
+
+//设置登录
+export const SET_CURRRNT_CATEGORY=" SET_CURRRNT_CATEGORY";

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": { //编译器选项
+    "outDir": "./dist", //指定输出目录
+    "sourceMap": true, //是否要生成sourceMap文件-->信息文件，里面存储着信息位置--->出错的代码显示
+    "noImplicitAny": true, //是都不允许出现隐含的any类型
+    "module": "commonjs", //模块规范，要把所有的模块编译成什么模块
+    "target": "es5", //编译的目标是ES5
+    "jsx": "react", //如何编译JSX语法
+    "esModuleInterop": true, //允许在common.js模块和es module进行转换
+    "baseUrl": ".", //查找非相对路径的模块的起始位置
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "./src/**/*" //只编译src目录下面的ts文件
+  ]
+}
